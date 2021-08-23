@@ -1,4 +1,13 @@
 {
   "item.sshcracksadditions.first_item": "Diamantschere",
-  "block.sshcracksadditions.mud": "Schlamm"
+
+  "block.sshcracksadditions.dirt_ore": "Erderz",
+  "item.sshcracksadditions.dirt_ingot": "Erdbarren",
+  "item.sshcracksadditions.raw_dirt": "Roherde",
+  "item.sshcracksadditions.dirt_wand": "Erdzauberstab",
+
+  "tooltip.dirt_wand.short_description": "Fühlt sich schleimig und dreckig an... Vielleicht hat es doch etwas besonderes?",
+  "tooltip.dirt_wand.hold_shift": "Halte \u00A7eShift \u00A77für mehr Informationen",
+  "tooltip.dirt_wand.long_description": "Ach komm schon, drück einfach Rechtsklick, wird wohl schon nichts passieren... oder?"
+
 }

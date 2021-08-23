@@ -19,16 +19,15 @@ public class BlockInit {
             AdditionsMod.MOD_ID
     );
 
-    public static final RegistryObject<Block> MUD = BLOCKS.register(
-            "mud",
+    public static final RegistryObject<Block> DIRT_ORE = BLOCKS.register(
+            "dirt_ore",
             () -> new Block(AbstractBlock.Properties
                     .create(Material.EARTH, MaterialColor.BROWN)
                     .hardnessAndResistance(1f, 1f)
-                    .harvestTool(ToolType.SHOVEL)
-                    .harvestLevel(-1)
-                    .slipperiness(.5f)
-                    .notSolid()
+                    .harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(1)
                     .sound(SoundType.GROUND)
+                    .setRequiresTool()
             )
     );
 

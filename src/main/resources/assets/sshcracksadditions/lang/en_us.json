@@ -1,4 +1,13 @@
 {
   "item.sshcracksadditions.first_item": "Diamond Shears",
-  "block.sshcracksadditions.mud": "Mud"
+
+  "block.sshcracksadditions.dirt_ore": "Dirt Ore",
+
+  "item.sshcracksadditions.raw_dirt": "Raw Dirt",
+  "item.sshcracksadditions.dirt_ingot": "Dirt Ingot",
+  "item.sshcracksadditions.dirt_wand": "Dirt Wand",
+
+  "tooltip.dirt_wand.short_description": "This is... dirty and slimy, but maybe there's something special?",
+  "tooltip.dirt_wand.hold_shift": "Hold \u00A7eShift \u00A77for More Information",
+  "tooltip.dirt_wand.long_description": "Just try it, right click, cmon can't happen anything... right?"
 }

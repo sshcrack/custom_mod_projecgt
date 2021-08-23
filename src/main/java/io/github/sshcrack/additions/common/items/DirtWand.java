@@ -61,7 +61,7 @@ public class DirtWand extends Item  {
 
         ItemStack item = player.getHeldItem(hand);
 
-        item.attemptDamageItem(1, world.getRandom(), (ServerPlayerEntity) player);
+        item.attemptDamageItem(1, world.getRandom(), null);
 
         ZombieEntity zombie = new ZombieEntity(world);
         zombie.setNoAI(true);

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "S#S",
+    " / "
+  ],
+  "key": {
+    "#": {
+      "item": "sshcracksadditions:dirt_ingot"
+    },
+    "S": {
+      "item": "sshcracksadditions:raw_dirt"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "sshcracksadditions:dirt_wand",
+    "count": 1
+  }
+}

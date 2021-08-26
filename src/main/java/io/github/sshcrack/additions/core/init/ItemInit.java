@@ -16,8 +16,8 @@ public class ItemInit {
             AdditionsMod.MOD_ID
     );
 
-    public static final RegistryObject<Item> FIRST_ITEM = ITEMS.register(
-            "first_item",
+    public static final RegistryObject<Item> DIAMOND_SHEARS = ITEMS.register(
+            "diamond_shears",
             () -> new Item(new Item.Properties().group(ItemGroup.TOOLS))
     );
 
@@ -42,7 +42,7 @@ public class ItemInit {
     public static final RegistryObject<BlockItem> DIRT_ORE = ITEMS.register("dirt_ore", () -> new BlockItem(
             BlockInit.DIRT_ORE.get(),
             new Item.Properties()
-                    .group(ItemGroup.MATERIALS)
+                    .group(ItemGroup.BUILDING_BLOCKS)
     ));
 
 }

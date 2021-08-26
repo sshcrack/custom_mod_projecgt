@@ -1,5 +1,6 @@
 package io.github.sshcrack.additions.core.util;
 
+import net.minecraft.block.BlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.World;
@@ -17,14 +18,15 @@ public class RayTrace {
             Vector3d currLook = look.mul(i, i, i);
             Vector3d addition = eyePosition.add(currLook);
 
-            int additionX = (int) addition.x;
-            int additionY = (int) addition.y;
-            int additionZ = (int) addition.z;
+            int additionX = (int) Math.round(addition.x);
+            int additionY = (int) Math.round(addition.y);
+            int additionZ = (int) Math.round(addition.z);
 
             BlockPos blockCoords = new BlockPos(additionX, additionY, additionZ);
-            boolean isAir = world.isAirBlock(blockCoords);
+            BlockState state = world.getBlockState(blockCoords);
+            boolean isSolid = state.isSolid();
 
-            if(isAir)
+            if(!isSolid)
                 continue;
 
             finalPos = blockCoords;
@@ -33,4 +35,5 @@ public class RayTrace {
 
         return finalPos;
     }
+
 }
